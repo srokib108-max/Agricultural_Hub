@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact-us</title>
+  <!-- Bootstrap 5 CSS link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CSS link end -->
+
+    <!-- Bootstrap Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap Icons link end -->
+
+    <!-- Google Fonts link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts link end -->
+
+    <!-- css lin -->
+     <link rel="stylesheet" href="css/style.css">
+    <!-- css link end -->
+</head>
+<body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="100">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#">AGRICULTURAL HUB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Farming-Guides.html">Farming Guides</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Crop-details.html">Crop Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pest-Control-Strategies.html">Pest Control</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Contact-us.html">Contact-Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation end -->
+
+  <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact US</h2>
+          <p class="text-muted">
+            Need help identifying a disease or planning your season? Contact us.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card p-4 shadow border-0">
+              <form
+                id="contactForm"
+                onsubmit="event.preventDefault(); alert('Thank you! An agricultural expert will review your inquiry and reply shortly.');"
+              >
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                      />
+                      <label for="name">Full Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="name@example.com"
+                        required
+                      />
+                      <label for="email">Email Address</label>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-floating">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        placeholder="+8801314756177"
+                        required
+                      />
+                      <label for="number">Number</label>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <select class="form-select" id="topic">
+                        <option selected>General Inquiry</option>
+                        <option value="1">Pest Identification</option>
+                        <option value="2">Crop Disease</option>
+                        <option value="3">Soil Health</option>
+                      </select>
+                      <label for="topic">Inquiry Topic</label>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder="Leave a message here"
+                        id="message"
+                        style="height: 150px"
+                        required
+                      ></textarea>
+                      <label for="message">Describe your issue...</label>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="fileUpload" class="form-label text-muted small"
+                      >Upload Image/Document (Optional - max 5MB)</label
+                    >
+                    <input class="form-control" type="file" id="fileUpload" />
+                  </div>
+
+                  <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn btn-success btn-lg px-5">
+                      Submit Inquiry
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direct Contact Info -->
+        <div class="row mt-5 text-center">
+          <div class="col-md-4">
+            <a href="https://www.google.com/search?q=phone+dialer+call+app&sca_esv=9370fbfcff6639a9&sxsrf=AE3TifOgLQGU4rdE4RPdr-FyAN1hyDnqMA%3A1764693176425&ei=uBQvaZ7XGc-QseMPxsLaqA4&oq=dialer+call&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2RpYWxlciBjYWxsKgIIADIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYR0jzD1AAWABwAngAkAEAmAGHBKABhwSqAQM1LTG4AQHIAQCYAgKgAgiYAwCIBgGQBgiSBwEyoAfGBbIHALgHAMIHBTAuMS4xyAcG&sclient=gws-wiz-serp" class="text-decoration-none text-success"><i class="bi bi-telephone fs-3 text-success"></i></a>
+            <h5 class="mt-2"> <a href="https://www.google.com/search?q=phone+dialer+call+app&sca_esv=9370fbfcff6639a9&sxsrf=AE3TifOgLQGU4rdE4RPdr-FyAN1hyDnqMA%3A1764693176425&ei=uBQvaZ7XGc-QseMPxsLaqA4&oq=dialer+call&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2RpYWxlciBjYWxsKgIIADIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYR0jzD1AAWABwAngAkAEAmAGHBKABhwSqAQM1LTG4AQHIAQCYAgKgAgiYAwCIBgGQBgiSBwEyoAfGBbIHALgHAMIHBTAuMS4xyAcG&sclient=gws-wiz-serp" class="text-decoration-none text-dark">Support Hotline</a></h5>
+            <p class="text-muted"><a href="https://www.google.com/search?q=phone+dialer+call+app&sca_esv=9370fbfcff6639a9&sxsrf=AE3TifOgLQGU4rdE4RPdr-FyAN1hyDnqMA%3A1764693176425&ei=uBQvaZ7XGc-QseMPxsLaqA4&oq=dialer+call&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2RpYWxlciBjYWxsKgIIADIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYR0jzD1AAWABwAngAkAEAmAGHBKABhwSqAQM1LTG4AQHIAQCYAgKgAgiYAwCIBgGQBgiSBwEyoAfGBbIHALgHAMIHBTAuMS4xyAcG&sclient=gws-wiz-serp" class="text-decoration-none text-success">+8801314756177</a></p>
+          </div>
+          <div class="col-md-4">
+            <a href="https://www.google.com/maps/@23.8018018,90.3710125,14z?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" class="text-decoration-none text-success"><i class="bi bi-geo-alt fs-3 text-success"></i></a>
+            <h5 class="mt-2"><a href="https://www.google.com/maps/@23.8018018,90.3710125,14z?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" class="text-decoration-none text-dark">Extension Office</a></h5>
+            <p class="text-muted"><a href="https://www.google.com/maps/@23.8018018,90.3710125,14z?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" class="text-decoration-none text-success" >1233 Mirpur-11, Dhaka</a></p>
+          </div>
+          <div class="col-md-4">
+            <a href="https://www.email.com/" class="text-decoration-none text-success"><i class="bi bi-envelope fs-3 text-success"></i></a>
+            <h5 class="mt-2"><a href="https://www.email.com/" class="text-decoration-none text-dark">Email</a></h5>
+            <p class="text-muted"><a href="https://www.email.com/" class="text-decoration-none text-success">skrokib5142@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section end -->
+   
+  <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h5>Connect</h5>
+            <div class="d-flex gap-3 justify-content-center">
+              <a href="https://www.facebook.com/" target="_blank" class="text-white"
+                ><i class="bi bi-facebook fs-5"></i
+              ></a>
+              <a href="https://x.com/" target="_blank" class="text-white"
+                ><i class="bi bi-twitter fs-5"></i
+              ></a>
+              <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" class="text-white"
+                ><i class="bi bi-instagram fs-5"></i
+              ></a>
+              <a href="https://www.youtube.com/watch?v=I6D8RM7jjng" target="_blank" class="text-white"
+                ><i class="bi bi-youtube fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary" />
+        <div class="text-center small">
+          <p id="demo"></p>
+          <p id="bemo"></p>
+          <a href="#" class="text-decoration-none text-white">@Agricultural Information Hub. All rights reserved.</a> 
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS end -->
+     <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+:root{
+    --primary-green: #198754;
+    --dark-green: #146c43;
+    --earth-brown: #8d6e63;
+    --light-bg: #f8f9fa;
+    --accent-gold: #ffc107;
+    --ai-purple: #6f42c1;
+    --ai-light: #f3ebff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    background-color: var(--light-bg);
+    padding-top: 62px; /* Offset for fixed navbar */
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: "Merriweather", serif;
+}
+
+/* Navigation */
+.navbar {
+    background-color: rgba(25, 135, 84, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: var(--accent-gold) !important;
+}
+/* Navigation end */
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/sunny-meadow-landscape.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+/* Hero Section End */
+
+/* farming Section */
+.farming-top{
+    background: 
+          url("../img/photo.avif");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.page-header {
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 4px black;
+}
+.data {
+    text-shadow: 2px 2px 8px black;
+}
+/* Cards section */
+.cad-head {
+    padding-bottom: 20px;
+    text-align: center;
+}
+.cad-head h4 {
+    font-size: 40px;
+}
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+/* Cards section end */
+
+/* Section Styling */
+section {
+    padding: 20px 0;
+}
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.section-header h2 {
+    color: var(--dark-green);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.section-header h2::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-gold);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Guides Section */
+.accordion-button:not(.collapsed) {
+    color: var(--dark-green);
+    background-color: #e9f7ef;
+}
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+/* farming Section End */
+
+/* Pest Control */
+.pest-card {
+    border-left: 5px solid var(--primary-green);
+}
+/* Pest Control end */
+
+/* Contact Form */
+.contact-section {
+    background-color: white;
+}
+.form-control:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+.btn-primary {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+}
+.btn-primary:hover {
+    background-color: var(--dark-green);
+    border-color: var(--dark-green);
+}
+.btn-ai {
+    background-color: var(--ai-purple);
+    color: white;
+    border: none;
+    transition: all 0.3s;
+}
+.btn-ai:hover {
+    background-color: #5a32a3;
+    color: white;
+    transform: translateY(-2px);
+}
+/* Contact Form end */
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+/* Crop Information Database */
+
+/* Features Summary Cards */
+.feature-cards-container {
+    margin-top: -60px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+.feature-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    height: 100%;
+    background: white;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+element.style {
+    margin: 0px;
+}
+/* Features Summary Cards end */
+
+/* Crop Information Database */
+
+/* Crop Section Specifics */
+.crop-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    height: 100%;
+}
+.crop-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+.crop-img-wrapper {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+.crop-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.crop-card:hover .crop-img-wrapper img {
+    transform: scale(1.1);
+}
+.category-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    z-index: 2;
+}
+/* Crop Section Specifics end */
+
+/* Crop Information Database */
+
+/* Footer */

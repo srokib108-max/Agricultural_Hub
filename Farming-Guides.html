@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farming-Guides</title>
+  <!-- Bootstrap 5 CSS link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CSS link end -->
+
+    <!-- Bootstrap Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap Icons link end -->
+
+    <!-- Google Fonts link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts link end -->
+
+    <!-- css lin -->
+     <link rel="stylesheet" href="css/style.css">
+    <!-- css link end -->
+</head>
+<body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="100">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#">AGRICULTURAL HUB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Farming-Guides.html">Farming Guides</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Crop-details.html">Crop Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pest-Control-Strategies.html">Pest Control</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact-us.html">Contact-Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation end -->
+
+   <!-- Detailed Farming Guides Section -->
+    <section id="guides" class="pt-5 mt-5">
+      <div class="container">
+        <div class="section-header">
+          <h2>Comprehensive Farming Guides</h2>
+          <p class="text-muted">
+            Expert methodologies, seasonal tips, and crop-specific tutorials.
+          </p>
+        </div>
+
+        <!-- Categorization Tabs -->
+        <ul
+          class="nav nav-pills justify-content-center guide-tabs mb-5"
+          id="guideTabs"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="methods-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#methods-content"
+              type="button"
+            >
+              <i class="bi bi-gear-wide-connected"></i> Farming Methods
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="seasonal-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#seasonal-content"
+              type="button"
+            >
+              <i class="bi bi-cloud-sun"></i> Seasonal Guides
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="crop-guides-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#crop-guides-content"
+              type="button"
+            >
+              <i class="bi bi-flower2"></i> Crop Specific
+            </button>
+          </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="guideTabsContent">
+          <!-- 1. Farming Methods -->
+          <div
+            class="tab-pane fade show active"
+            id="methods-content"
+            role="tabpanel"
+          >
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <div class="accordion" id="accordionMethods">
+                  <!-- Method 1 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#method1"
+                      >
+                        <i class="bi bi-recycle me-2 text-success"></i> Organic
+                        Soil Preparation & Composting
+                      </button>
+                    </h2>
+                    <div
+                      id="method1"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionMethods"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Building healthy soil is the foundation of organic
+                          farming. Follow these steps to create nutrient-rich
+                          soil without synthetic fertilizers.
+                        </p>
+                        <h6 class="mt-3 text-dark">Step-by-Step Process:</h6>
+                        <ul class="list-unstyled">
+                          <li class="mb-2">
+                            <span class="step-badge">1</span>
+                            <strong>Test Your Soil:</strong> Use a pH kit to
+                            determine acidity levels. Most vegetables prefer pH
+                            6.0-7.0.
+                          </li>
+                          <li class="mb-2">
+                            <span class="step-badge">2</span>
+                            <strong>Aerate:</strong> Gently turn the soil using
+                            a broadfork to improve oxygen flow without
+                            destroying fungal networks.
+                          </li>
+                          <li class="mb-2">
+                            <span class="step-badge">3</span>
+                            <strong>Add Organic Matter:</strong> Spread 2-3
+                            inches of compost or aged manure across the topsoil.
+                          </li>
+                          <li class="mb-2">
+                            <span class="step-badge">4</span>
+                            <strong>Mulch:</strong> Cover with straw or leaf
+                            mold to retain moisture and suppress weeds.
+                          </li>
+                        </ul>
+                        <div class="alert alert-success small mt-3">
+                          <i class="bi bi-lightbulb"></i>
+                          <strong>Tip:</strong> Avoid tilling too deep as it
+                          brings dormant weed seeds to the surface.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Method 2 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#method2"
+                      >
+                        <i class="bi bi-water me-2 text-primary"></i>
+                        Hydroponics for Beginners
+                      </button>
+                    </h2>
+                    <div
+                      id="method2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionMethods"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          A guide to soil-less farming using the Deep Water
+                          Culture (DWC) method.
+                        </p>
+                        <h6 class="mt-3 text-dark">Requirements:</h6>
+                        <ul>
+                          <li>Reservoir container (opaque)</li>
+                          <li>Net pots and clay pebbles</li>
+                          <li>Air pump and air stone</li>
+                          <li>Nutrient solution</li>
+                        </ul>
+                        <h6 class="mt-3 text-dark">Setup Instructions:</h6>
+                        <ol>
+                          <li>
+                            Fill reservoir with water and add nutrients
+                            according to package instructions.
+                          </li>
+                          <li>Place air stone in water to oxygenate roots.</li>
+                          <li>
+                            Place plants in net pots with clay pebbles for
+                            support.
+                          </li>
+                          <li>
+                            Ensure roots touch the water, but the stem stays dry
+                            to prevent rot.
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Seasonal Guides -->
+          <div class="tab-pane fade" id="seasonal-content" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-primary border-2">
+                  <div class="card-body">
+                    <h4 class="card-title text-primary">
+                      <i class="bi bi-flower1"></i> Spring Planting
+                    </h4>
+                    <p class="card-text">
+                      Spring is the busiest time for preparation. Focus on
+                      cool-weather crops.
+                    </p>
+                    <hr />
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i
+                        >Start seedlings indoors (Tomatoes, Peppers).
+                      </li>
+                      <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i
+                        >Direct sow peas, spinach, and radishes as soon as soil
+                        thaws.
+                      </li>
+                      <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i
+                        >Prune fruit trees before buds break.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-info border-2">
+                  <div class="card-body">
+                    <h4 class="card-title text-info">
+                      <i class="bi bi-snow"></i> Winter Maintenance
+                    </h4>
+                    <p class="card-text">
+                      Protecting your soil and equipment during the dormant
+                      season.
+                    </p>
+                    <hr />
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i
+                        >Plant cover crops (Clover, Rye) to fix nitrogen.
+                      </li>
+                      <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i
+                        >Drain irrigation hoses to prevent freezing.
+                      </li>
+                      <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i
+                        >Service machinery (Oil change, sharpen blades).
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Crop Specific Guides -->
+          <div class="tab-pane fade" id="crop-guides-content" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <div class="accordion" id="accordionCrops">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#cropGuide1"
+                      >
+                        <i
+                          class="bi bi-circle-fill text-warning me-2"
+                          style="font-size: 0.5rem"
+                        ></i>
+                        Wheat Cultivation Guide
+                      </button>
+                    </h2>
+                    <div
+                      id="cropGuide1"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionCrops"
+                    >
+                      <div class="accordion-body">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img
+                              src="img/photo3.avif"
+                              class="img-fluid rounded"
+                              alt="Wheat"
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <h5>Land Preparation & Sowing</h5>
+                            <p>
+                              Wheat requires a well-pulverized seedbed. Plow the
+                              land 2-3 times followed by planking.
+                            </p>
+                            <h6>Key Stages:</h6>
+                            <ol>
+                              <li>
+                                <strong>Sowing:</strong> Use seed drills for
+                                uniform depth (4-5cm).
+                              </li>
+                              <li>
+                                <strong>Irrigation:</strong> Critical at Crown
+                                Root Initiation (CRI) stage (21 days after
+                                sowing).
+                              </li>
+                              <li>
+                                <strong>Harvesting:</strong> Harvest when grains
+                                are hard and moisture is below 14%.
+                              </li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#cropGuide2"
+                      >
+                        <i
+                          class="bi bi-circle-fill text-danger me-2"
+                          style="font-size: 0.5rem"
+                        ></i>
+                        Tomato Care: Pruning & Staking
+                      </button>
+                    </h2>
+                    <div
+                      id="cropGuide2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionCrops"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Indeterminate tomatoes require regular maintenance for
+                          maximum yield.
+                        </p>
+                        <h6>Best Practices:</h6>
+                        <ul>
+                          <li>
+                            <strong>Suckering:</strong> Remove the shoots that
+                            grow in the "armpit" between the main stem and
+                            branches.
+                          </li>
+                          <li>
+                            <strong>Staking:</strong> Use cages or a trellis
+                            system. Tie the main stem loosely every 6-8 inches.
+                          </li>
+                          <li>
+                            <strong>Watering:</strong> Water at the base to keep
+                            leaves dry and prevent blight.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Detailed Farming Guides Section end -->
+   
+  <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h5>Connect</h5>
+            <div class="d-flex gap-3 justify-content-center">
+              <a href="https://www.facebook.com/" target="_blank" class="text-white"
+                ><i class="bi bi-facebook fs-5"></i
+              ></a>
+              <a href="https://x.com/" target="_blank" class="text-white"
+                ><i class="bi bi-twitter fs-5"></i
+              ></a>
+              <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" class="text-white"
+                ><i class="bi bi-instagram fs-5"></i
+              ></a>
+              <a href="https://www.youtube.com/watch?v=I6D8RM7jjng" target="_blank" class="text-white"
+                ><i class="bi bi-youtube fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary" />
+        <div class="text-center small">
+          <p id="demo"></p>
+          <p id="bemo"></p>
+          <a href="#" class="text-decoration-none text-white">@Agricultural Information Hub. All rights reserved.</a> 
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS end -->
+     <script src="js/main.js"></script>
+</body>
+</html>

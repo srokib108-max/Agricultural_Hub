@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Information Cente</title>
+
+    <!-- Bootstrap 5 CSS link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CSS link end -->
+
+    <!-- Bootstrap Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap Icons link end -->
+
+    <!-- Google Fonts link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts link end -->
+
+    <!-- css lin -->
+     <link rel="stylesheet" href="css/style.css">
+    <!-- css link end -->
+</head>
+<body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="100">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-nav">
+      <div class="container">
+        <a class="navbar-brand" href="#">AGRICULTURAL HUB</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Farming-Guides.html">Farming Guides</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Crop-details.html">Crop Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pest-Control-Strategies.html">Pest Control</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact-us.html">Contact-Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation end -->
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+      <div class="container hero-content">
+        <h1>Empowering Farmers Guides <br />  & Feeding the Future</h1>
+        <p class="lead mb-4">Your comprehensive resource for detailed guides, crop management, and expert agricultural advice.</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#guides" class="btn btn-lg btn-success">Start Learning</a>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section End -->
+
+    <!-- Farming Guides -->
+    <div class="farming-top">
+      <div class="page-header">
+        <h1 class="fw-bold display-5">Farming Guides</h1>
+      </div>
+      <div class="data my-5">
+        <h2 class="fw-bold text-center mb-4">Explore Farming Practices & Techniques</h2>
+        <p class="text-center mb-5">A collection of step-by-step farming guides categorized by crop type, season, and agricultural method.
+        </p>
+      </div>
+    </div>
+    <div class="cad-head">
+      <h4 class="fw-bold mb-3">Season-Based Guides</h4>
+    </div>
+    <section class="card-section">
+      <div class="container">
+        <div class="row g-4 mb-5">
+          <div class="col-md-4">
+            <div class="card shadow guide-card">
+              <img src="img/photo1.avif" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Summer Farming Tips</h5>
+                <p>Learn irrigation, heat-control techniques, and best summer crops.</p>
+                <a href="#" class="btn btn-success">Read Guide</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow guide-card">
+              <img src="img/images (1).jpeg"  class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Winter Farming Guide</h5>
+                <p>Frost protection, greenhouse growing, and winter crop methods.</p>
+                <a href="#" class="btn btn-success">Read Guide</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow guide-card">
+              <img src="img/photo2.avif" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Monsoon Farming Tips</h5>
+                <p>Soil drainage, disease prevention, and rainy-season crops.</p>
+                <a href="#" class="btn btn-success">Read Guide</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Farming Guides end -->
+
+    <!-- Guides section -->
+    <section id="guides">
+      <div class="container">
+        <div class="section-header">
+          <h2>Farming Guides</h2>
+          <p class="text-muted">Master the art of agriculture with our curated methodologies.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="accordion" id="guidesAccordion">
+              <!-- Guide 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button"type="button"data-bs-toggle="collapse"data-bs-target="#guide1">
+                    <i class="bi bi-droplet-fill me-2 text-primary"></i>
+                    Sustainable Irrigation Techniques
+                  </button>
+                </h2>
+                <div
+                  id="guide1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#guidesAccordion"
+                >
+                  <div class="accordion-body">
+                    <span class="badge bg-info mb-2">Water Management</span>
+                    <p>
+                      <strong>Summary:</strong> Learn how to maximize water
+                      efficiency using drip irrigation.
+                    </p>
+                    <ol>
+                      <li>Assess soil moisture levels using a tensiometer.</li>
+                      <li>
+                        Install drip lines along crop rows, ensuring emitters
+                        are near the root zone.
+                      </li>
+                      <li>
+                        Schedule watering during early morning or late evening
+                        to reduce evaporation.
+                      </li>
+                      <li>Monitor system for leaks and cloggs weekly.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Guide 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#guide2"
+                  >
+                    <i class="bi bi-recycle me-2 text-success"></i> Organic Soil
+                    Preparation
+                  </button>
+                </h2>
+                <div
+                  id="guide2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#guidesAccordion"
+                >
+                  <div class="accordion-body">
+                    <span class="badge bg-success mb-2">Soil Health</span>
+                    <p>
+                      <strong>Summary:</strong> Preparing nutrient-rich soil
+                      without synthetic chemicals.
+                    </p>
+                    <ol>
+                      <li>Test soil pH and nutrient levels.</li>
+                      <li>
+                        Apply compost or well-rotted manure (2-3 inches top
+                        layer).
+                      </li>
+                      <li>
+                        Practice crop rotation to prevent nutrient depletion.
+                      </li>
+                      <li>
+                        Use cover crops (like clover) during off-seasons to fix
+                        nitrogen.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- Guide 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#guide3"
+                  >
+                    <i class="bi bi-calendar3 me-2 text-warning"></i> Seasonal
+                    Planting Calendar
+                  </button>
+                </h2>
+                <div
+                  id="guide3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#guidesAccordion"
+                >
+                  <div class="accordion-body">
+                    <span class="badge bg-warning text-dark mb-2"
+                      >Planning</span
+                    >
+                    <p>Understanding when to plant is crucial for yield.</p>
+                    <ul>
+                      <li>
+                        <strong>Spring:</strong> Leafy greens, peas, radishes.
+                      </li>
+                      <li>
+                        <strong>Summer:</strong> Tomatoes, peppers, corn,
+                        melons.
+                      </li>
+                      <li>
+                        <strong>Fall:</strong> Root vegetables, garlic, winter
+                        wheat.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Farming Guides Section End -->
+
+    <!-- Crop Details Section -->
+    <section id="crops" class="bg-white">
+      <div class="container">
+        <div class="section-header">
+          <h2>Crop Details</h2>
+          <p class="text-muted">
+            Comprehensive profiles for major crop categories.
+          </p>
+        </div>
+
+        <!-- Crop Filter Tabs -->
+        <ul
+          class="nav nav-pills justify-content-center mb-5"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active rounded-pill"
+              id="all-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-all"
+              type="button"
+            >
+              All Crops
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link rounded-pill"
+              id="grains-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-grains"
+              type="button"
+            >
+              Grains
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link rounded-pill"
+              id="fruits-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-fruits"
+              type="button"
+            >
+              Vegetables
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link rounded-pill"
+              id="veg-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-veg"
+              type="button"
+            >
+              Fruits 
+            </button>
+          </li>
+        </ul>
+
+        <!-- Crop Content -->
+        <div class="tab-content" id="pills-tabContent">
+          <!-- All/Mixed View -->
+          <div class="tab-pane fade show active" id="pills-all">
+            <div class="row g-4">
+              <!-- Wheat Card -->
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img
+                    src="img/photo3.avif"
+                    class="card-img-top"
+                    alt="Wheat"
+                  />
+                  <div class="card-body">
+                    <span class="badge bg-secondary mb-2">Grain</span>
+                    <h5 class="card-title">Wheat</h5>
+                    <p class="card-text">
+                      A staple cereal grain worldwide. Requires well-drained
+                      loam soil.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#wheatModal"
+                    >
+                      View Full Profile
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tomato Card -->
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img
+                    src="img/photo4.avif"
+                    class="card-img-top"
+                    alt="Tomato"
+                  />
+                  <div class="card-body">
+                    <span class="badge bg-danger mb-2">Vegetable</span>
+                    <h5 class="card-title">Tomato</h5>
+                    <p class="card-text">
+                      Warm-season crop perfect for home gardens and commercial
+                      farming.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#tomatoModal"
+                    >
+                      View Full Profile
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Apple Card -->
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img
+                    src="img/photo5.avif"
+                    class="card-img-top"
+                    alt="Apple"
+                  />
+                  <div class="card-body">
+                    <span class="badge bg-warning text-dark mb-2">Fruit</span>
+                    <h5 class="card-title">Apple</h5>
+                    <p class="card-text">
+                      Perennial tree fruit requiring cold dormancy and pruning.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#appleModal"
+                    >
+                      View Full Profile
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Note: Additional tab panes (grains, fruits, veg) would filter the above content in a real backend app. For this static demo, 'All' shows examples. -->
+          <div class="tab-pane fade" id="pills-grains">
+            <div class="alert alert-light text-center">
+              <div class="row g-4">
+                <!-- Wheat Card -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img
+                      src="img/img3.webp"
+                      class="card-img-top"
+                      alt="wild rice"
+                    />
+                    <div class="card-body">
+                      <span class="badge bg-secondary mb-2">Grain</span>
+                      <h5 class="card-title">Wild rice</h5>
+                      <p class="card-text">
+                        Wild rice, also called manoomin, mnomen, psíŋ, Canada rice, Indian rice, or water oats.
+                      </p>
+                      <button
+                        class="btn btn-outline-success btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#wheatModal"
+                      >
+                        View Full Profile
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tomato Card -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img
+                      src="img/img2.webp"
+                      class="card-img-top"
+                      alt="Oat"
+                    />
+                    <div class="card-body">
+                      <span class="badge bg-danger mb-2">Grain</span>
+                      <h5 class="card-title">Oat</h5>
+                      <p class="card-text">
+                        The oat, sometimes called the common oat, is a species which is known by the same name.
+                      </p>
+                      <button
+                        class="btn btn-outline-success btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#tomatoModal"
+                      >
+                        View Full Profile
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Apple Card -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img
+                      src="img/img1.webp"
+                      class="card-img-top"
+                      alt="Maize"
+                    />
+                    <div class="card-body">
+                      <span class="badge bg-warning text-dark mb-2">Grain</span>
+                      <h5 class="card-title">Maize</h5>
+                      <p class="card-text">
+                        Maize, also known as corn in North American English, is a tall stout grass that produces cereal grain.
+                      </p>
+                      <button
+                        class="btn btn-outline-success btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#appleModal"
+                      >
+                        View Full Profile
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-fruits">
+            <div class="alert alert-light text-center">
+              <div class="row g-4">
+                <!-- Wheat Card -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img
+                      src="img/img4.jpg"
+                      class="card-img-top"
+                      alt="Carrot"
+                    />
+                    <div class="card-body">
+                      <span class="badge bg-secondary mb-2">Vegetable</span>
+                      <h5 class="card-title">Carrot</h5>
+                      <p class="card-text">
+                       A carrot is an edible, typically orange root that is crunchy, nutritious, and versatile.
+                      </p>
+                      <button
+                        class="btn btn-outline-success btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#wheatModal"
+                      >
+                        View Full Profile
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tomato Card -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img
+                      src="img/img4.webp"
+                      class="card-img-top"
+                      alt="Broccoli"
+                    />
+                    <div class="card-body">
+                      <span class="badge bg-danger mb-2">Vegetable</span>
+                      <h5 class="card-title">Broccoli</h5>
+                      <p class="card-text">
+                        Broccoli is an edible green plant in the cabbage family head as a vegetable.
+                      </p>
+                      <button
+                        class="btn btn-outline-success btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#tomatoModal"
+                      >
+                        View Full Profile
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Apple Card -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img
+                      src="img/img5.webp"
+                      class="card-img-top"
+                      alt="Lettuce"
+                    />
+                    <div class="card-body">
+                      <span class="badge bg-warning text-dark mb-2">Vegetable</span>
+                      <h5 class="card-title"> Lettuce</h5>
+                      <p class="card-text">
+                        Lettuce is an annual plant of the family Asteraceae mostly grown as a leaf vegetable.
+                      </p>
+                      <button
+                        class="btn btn-outline-success btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#appleModal"
+                      >
+                        View Full Profile
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-veg">
+            <div class="alert alert-light text-center">
+              <div class="row g-4">
+                <!-- Wheat Card -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img src="img/img6.jpg" class="card-img-top" alt="pineapple">
+                    <div class="card-body">
+                      <span class="badge bg-secondary mb-2">Fruit</span>
+                      <h5 class="card-title">pineapple</h5>
+                      <p class="card-text">
+                        The pineapple is a tropical significant plant in the family Bromeliaceae.
+                      </p>
+                      <button
+                        class="btn btn-outline-success btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#wheatModal"
+                      >
+                        View Full Profile
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tomato Card -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img src="img/img7.webp" class="card-img-top" alt="watermelon"/>
+                    <div class="card-body">
+                      <span class="badge bg-danger mb-2">Fruit</span>
+                      <h5 class="card-title">watermelon</h5>
+                      <p class="card-text">
+                        The watermelon is a species of flowering, that has a large, edible fruit.
+                      </p>
+                      <button
+                        class="btn btn-outline-success btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#tomatoModal"
+                      >
+                        View Full Profile
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Apple Card -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img src="img/img8.webp" class="card-img-top"  alt="cantaloupe" />
+                    <div class="card-body">
+                      <span class="badge bg-warning text-dark mb-2">Fruit</span>
+                      <h5 class="card-title">cantaloupe</h5>
+                      <p class="card-text">
+                        The cantaloupe is a melon with sweet, aromatic, and usually orange flesh.
+                      </p>
+                      <button
+                        class="btn btn-outline-success btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#appleModal"
+                      >
+                        View Full Profile
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Crop Details Section end -->
+
+    <!-- Pest Control Section -->
+    <section id="pests" style="background-color: #e9ecef">
+      <div class="container">
+        <div class="section-header">
+          <h2>Pest Control Strategies</h2>
+          <p class="text-muted">
+            Integrated Pest Management (IPM) for healthy crops.
+          </p>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4">
+            <img
+              src="img/DALL.webp"
+              alt="Ladybug"
+              class="img-fluid rounded shadow"
+            />
+            <p class="text-muted text-center mt-2 small">
+              Biological control: Ladybugs eating aphids.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="list-group">
+              <div
+                class="list-group-item list-group-item-action flex-column align-items-start pest-card mb-3 shadow-sm border-0"
+              >
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <i class="bi bi-shield-check text-success"></i> Monitoring &
+                    Detection
+                  </h5>
+                </div>
+                <p class="mb-1">
+                  Regular scouting of fields is the first line of defense. Use
+                  pheromone traps to detect insect populations early before they
+                  cause economic damage.
+                </p>
+              </div>
+
+              <div
+                class="list-group-item list-group-item-action flex-column align-items-start pest-card mb-3 shadow-sm border-0"
+              >
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <i class="bi bi-flower2 text-warning"></i> Biological
+                    Control
+                  </h5>
+                </div>
+                <p class="mb-1">
+                  Encourage natural predators. For example, introducing
+                  parasitic wasps or ladybugs can naturally reduce aphid and
+                  caterpillar populations without chemicals.
+                </p>
+              </div>
+
+              <div
+                class="list-group-item list-group-item-action flex-column align-items-start pest-card mb-3 shadow-sm border-0"
+              >
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <i class="bi bi-spray-bottle text-danger"></i> Organic
+                    Remedies
+                  </h5>
+                </div>
+                <p class="mb-1">
+                  Use Neem oil, insecticidal soaps, or diatomaceous earth. These
+                  are effective against soft-bodied insects while causing
+                  minimal harm to the environment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pest Control Section end -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h5>Connect</h5>
+            <div class="d-flex gap-3 justify-content-center">
+              <a href="https://www.facebook.com/" target="_blank" class="text-white"
+                ><i class="bi bi-facebook fs-5"></i
+              ></a>
+              <a href="https://x.com/" target="_blank" class="text-white"
+                ><i class="bi bi-twitter fs-5"></i
+              ></a>
+              <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" class="text-white"
+                ><i class="bi bi-instagram fs-5"></i
+              ></a>
+              <a href="https://www.youtube.com/watch?v=I6D8RM7jjng" target="_blank" class="text-white"
+                ><i class="bi bi-youtube fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary" />
+        <div class="text-center small">
+          <p id="demo"></p>
+          <p id="bemo"></p>
+          <a href="#" class="text-decoration-none text-white">@Agricultural Information Hub. All rights reserved.</a> 
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS end -->
+     <script src="js/main.js"></script>
+    
+</body>
+</html>

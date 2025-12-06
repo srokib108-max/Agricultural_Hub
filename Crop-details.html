@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop-details</title>
+  <!-- Bootstrap 5 CSS link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CSS link end -->
+
+    <!-- Bootstrap Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap Icons link end -->
+
+    <!-- Google Fonts link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts link end -->
+
+    <!-- css lin -->
+     <link rel="stylesheet" href="css/style.css">
+    <!-- css link end -->
+</head>
+<body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="100">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#">AGRICULTURAL HUB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Farming-Guides.html">Farming Guides</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Crop-details.html">Crop Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pest-Control-Strategies.html">Pest Control</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact-us.html">Contact-Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation end -->
+
+  <!-- CROP DETAILS SECTION -->
+    <section id="crops">
+      <div class="container">
+        <div class="section-header">
+          <h2>Crop Information Database</h2>
+          <p class="text-muted">
+            Comprehensive guides on cultivation, soil, and harvesting.
+          </p>
+        </div>
+
+        <!-- Category Filter -->
+        <ul
+          class="nav nav-pills justify-content-center mb-5"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="all-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-all"
+              type="button"
+            >
+              All Crops
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="grains-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-grains"
+              type="button"
+            >
+              Grains
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="fruits-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-fruits"
+              type="button"
+            >
+              Vegetables
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="veg-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-veg"
+              type="button"
+            >
+              Fruits
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="cash-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-cash"
+              type="button"
+            >
+              Cash Crops
+            </button>
+          </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent">
+          <!-- All Crops (Simplified View for Demo) -->
+          <div class="tab-pane fade show active" id="pills-all">
+            <div class="row g-4">
+              <!-- Wheat -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-grain">Grain</span>
+                    <img
+                      src="img/photo3.avif"
+                      alt="Wheat"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Wheat</h5>
+                    <p class="card-text small text-muted">
+                      Staple cereal grain essential for flour and baking.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#wheatModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tomato -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-veg">Vegetable</span>
+                    <img
+                      src="img/photo4.avif"
+                      alt="Tomato"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Tomato</h5>
+                    <p class="card-text small text-muted">
+                      Versatile culinary vegetable rich in Lycopene.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#tomatoModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Apple -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-fruit">Fruit</span>
+                    <img
+                      src="img/photo5.avif"
+                      alt="Apple"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Apple</h5>
+                    <p class="card-text small text-muted">
+                      Popular pome fruit grown in temperate zones.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#appleModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cotton -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-cash">Cash Crop</span>
+                    <img
+                      src="img/img9.jpg"
+                      alt="Apple"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Cotton</h5>
+                    <p class="card-text small text-muted">
+                      Fiber crop used primarily in the textile industry.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#cottonModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other tabs act as filters (Empty for demo structure, but would contain filtered cards) -->
+          <div class="tab-pane fade" id="pills-grains">
+            <div class="row g-4">
+              <!-- Wheat -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-grain">Grain</span>
+                    <img
+                      src="img/img10.jpg"
+                      alt="oat"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">oat</h5>
+                    <p class="card-text small text-muted">
+                      The oat, sometimes called the common oat.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#wheatModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tomato -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-veg">Grain</span>
+                    <img
+                      src="img/img11.jpg"
+                      alt="Quinoa"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Quinoa</h5>
+                    <p class="card-text small text-muted">
+                      Quinoa is a flowering plant in the amaranth family.                   
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#tomatoModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Apple -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-fruit">Grain</span>
+                    <img
+                      src="img/img12.jpg"
+                      alt="Barley"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Barley</h5>
+                    <p class="card-text small text-muted">
+                      Barley, a member of the grass family, is a major cereal grain.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#appleModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cotton -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-cash">Grain</span>
+                    <img
+                      src="img/img13.jpg"
+                      alt="Teff"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Teff</h5>
+                    <p class="card-text small text-muted">
+                      Teff, Eragrostis tef, also known as Williams lovegrass and annual.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#cottonModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-fruits">
+            <div class="row g-4">
+              <!-- Wheat -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-grain">Vegetable</span>
+                    <img
+                      src="img/img14.jpg"
+                      alt=" Beetroot"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title"> Beetroot</h5>
+                    <p class="card-text small text-muted">
+                      Beetroot or beet is the taproot portion of a Beta vulgaris subsp.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#wheatModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tomato -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-veg">Vegetable</span>
+                    <img
+                      src="img/img15.jpg"
+                      alt="Cauliflower"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Cauliflower</h5>
+                    <p class="card-text small text-muted">
+                      Cauliflower is one of several vegetables cultivated from.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#tomatoModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Apple -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-fruit">Vegetable</span>
+                    <img
+                      src="img/img16.jpg"
+                      alt="Eggplant"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Eggplant</h5>
+                    <p class="card-text small text-muted">
+                      Eggplant, aubergine, brinjal, or baigan is a plant species.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#appleModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cotton -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-cash">Vegetable </span>
+                    <img
+                      src="img/img17.jpg"
+                      alt="bell pepper"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Bell pepper</h5>
+                    <p class="card-text small text-muted">
+                      The bell pepper is the Group of the species Capsicum annuum.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#cottonModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-veg">
+            <div class="row g-4">
+              <!-- Wheat -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-grain">Fruit</span>
+                    <img
+                      src="img/img7.webp"
+                      alt="watermelon"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">watermelon</h5>
+                    <p class="card-text small text-muted">
+                      The watermelon is a species of flowering plant in the family Cucurbitaceae.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#wheatModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tomato -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-veg">Fruit</span>
+                    <img
+                      src="img/img18.webp"
+                      alt="pineapple"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">pineapple</h5>
+                    <p class="card-text small text-muted">
+                      The pineapple is a tropical plant with an edible fruit; it is the most economically.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#tomatoModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Apple -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-fruit">Fruit</span>
+                    <img
+                      src="img/img19.webp"
+                      alt="papaya"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">papaya</h5>
+                    <p class="card-text small text-muted">
+                      The papaya, papaw, or pawpawawpaw is the plant species Carica papaya.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#appleModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cotton -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-cash">Fruit</span>
+                    <img
+                      src="img/img20.webp"
+                      alt="Averrhoa carambola "
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Averrhoa carambola </h5>
+                    <p class="card-text small text-muted">
+                      Averrhoa carambola is a species of tree in the family Oxalidaceae native to tropical Southeast Asia.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#cottonModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-cash">
+            <div class="row g-4">
+              <!-- Wheat -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-grain">Cash Crop</span>
+                    <img
+                      src="img/img21.png"
+                      alt="Cotton"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Cotton</h5>
+                    <p class="card-text small text-muted">
+                      Cotton is the most important fibre crop of India and plays an important role in industrial and agricultural.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#wheatModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tomato -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-veg">Cash Crop</span>
+                    <img
+                      src="img/img22.avif"
+                      alt="cocoa"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Cocoa</h5>
+                    <p class="card-text small text-muted">
+                      Dry cocoa solids are the components of cocoa beans remaining after cocoa butter.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#tomatoModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Apple -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-fruit">Cash Crop</span>
+                    <img
+                      src="img/img23.jpg"
+                      alt="Rubber"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Rubber</h5>
+                    <p class="card-text small text-muted">
+                      Plantation Crops (Coffee, Coconut, Tea, and Rubber etc.) Horticulture crops (Fruits and Vegetables).
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#appleModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cotton -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card crop-card h-100">
+                  <div class="crop-img-wrapper">
+                    <span class="category-badge bg-cash">Cash Crop</span>
+                    <img
+                      src="img/img24.jpg"
+                      alt="Groundnut"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Groundnut</h5>
+                    <p class="card-text small text-muted">
+                      The peanut, also known as the groundnut, goober, goober pea, pindar or monkey.
+                    </p>
+                    <button
+                      class="btn btn-outline-success btn-sm w-100 mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#cottonModal"
+                    >
+                      View Guide
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CROP DETAILS SECTION end -->
+
+   
+   
+  <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h5>Connect</h5>
+            <div class="d-flex gap-3 justify-content-center">
+              <a href="https://www.facebook.com/" target="_blank" class="text-white"
+                ><i class="bi bi-facebook fs-5"></i
+              ></a>
+              <a href="https://x.com/" target="_blank" class="text-white"
+                ><i class="bi bi-twitter fs-5"></i
+              ></a>
+              <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" class="text-white"
+                ><i class="bi bi-instagram fs-5"></i
+              ></a>
+              <a href="https://www.youtube.com/watch?v=I6D8RM7jjng" target="_blank" class="text-white"
+                ><i class="bi bi-youtube fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary" />
+        <div class="text-center small">
+          <p id="demo"></p>
+          <p id="bemo"></p>
+          <a href="#" class="text-decoration-none text-white">@Agricultural Information Hub. All rights reserved.</a> 
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS end -->
+     <script src="js/main.js"></script>
+</body>
+</html>
